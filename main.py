@@ -160,7 +160,7 @@ def eliminar_cliente(contas):
 # Função para o cliente realizar login
 def realizar_login(contas):
     print("\n" + "=" * 30)
-    print("\n--- ACESSO AO SISTEMA ---")
+    print("--- ACESSO AO SISTEMA ---")
     print("=" * 30)
 
     # Validação de ID
@@ -191,7 +191,53 @@ def realizar_login(contas):
     return None
 
 
+# Estatísticas Básicas
 
+# Função para mostrar as estatísticas na forma de um relatório
+def mostrar_estat(contas):
+    print("\n" + "=" * 30)
+    print("--- Relatório Administrativo ---")
+    print("=" * 30)
+
+    # Inicialização
+    total_banco = 0.0
+    total_movimentos = 0
+    total_clientes = len(contas)
+
+    # Verificação se existe clientes registrados
+    if total_clientes == 0:
+        print("O banco não tem clientes registrados!")
+        return
+
+    # Ciclo para sumar o total de saldo e movimentos
+    for id_conta, info in contas.items():
+        total_banco += info['saldo']
+        total_movimentos += info['movimentos']
+
+    # Relatório Administrativo
+    print(f"Saldo Total no Banco:       {total_banco:>.2f} €")
+    print(f"Número de Cientes:          {total_clientes}")
+    print(f"Total de Operações:         {total_movimentos}")
+    print(f"Média por Cliente: {(total_movimentos / total_clientes):>.2f} €")
+    print("=" * 30)
+
+# Função que permite o ADMIN pesquisar todos os movimentos de uma conta em específico
+def pesquisar_historico(contas):
+    print("\n--- PESQUISA DE MOVIMENTOS ---")
+    print("=" * 30)
+
+    # Validar ID Conta
+    id_conta = validar_id_conta(contas, novo = False)
+
+    # Verificação para mostrar o histórico
+    if id_conta:
+        historico = contas[id_conta]['movimentos']
+        print(f"\nHistórico da Conta: {id_conta} ({contas[id_conta]['nome']})")
+        print(f"{'Data':<20} | {'Tipo':<12} | {'Valor':<10} | {'Destino'}")
+        print("=" * 60)
+
+        for m in historico:
+            print(f"{m['data']:<20} | {m['tipo']:<12} | {m['valor']:>8.2f}€ | {m['destino']}")
 
 
 
