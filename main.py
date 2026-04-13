@@ -69,6 +69,7 @@ def validar_nome():
 def validar_pin():
     while True:
         pin = input("Defina o PIN (4 dígitos): ")
+        # Verificação se o PIN tem 4 números e se é números
         if len(pin) == 4 and pin.isdigit():
             return pin
         else:
@@ -77,19 +78,23 @@ def validar_pin():
 # Função para validar o ID da Conta
 def validar_id_conta(contas, novo = True):
     while True:
-        id_conta = input("ID do Conta: ").strip()
+        id_conta = input("ID do Conta: ").strip() # Remove espaços no ínicio e fim
 
+        # Verificação se o ID da conta tem letras
         if id_conta.isdigit():
             print("ERRO: O ID da conta deve conter apenas números!")
             continue
 
+        # Se novo for verdadeiro
         if novo:
+            # Verifica se já existe a conta
             if id_conta in contas:
                 print(f"ERRO: A conta {id_conta} já existe no sistema!")
             else:
                 return id_conta
-
+        # Se novo for falso
         else:
+            # Verificação se a conta não existe
             if id_conta not in contas:
                 print(f"ERRO: A conta {id_conta} não foi encontrada!")
             else:
@@ -148,6 +153,42 @@ def eliminar_cliente(contas):
             print("Conta eliminada com sucesso!")
         else:
             print("Conta não encontrada!")
+
+
+# Login e Segurança
+
+# Função para o cliente realizar login
+def realizar_login(contas):
+    print("\n" + "=" * 30)
+    print("\n--- ACESSO AO SISTEMA ---")
+    print("=" * 30)
+
+    # Validação de ID
+    id_conta = validar_id_conta(contas, novo = False)
+
+    # Verificação se o ID é None
+    if id_conta is None:
+        return None
+
+    tentativas = 3
+    while tentativas > 0:
+        print(f"\nTentativas restantes: {tentativas}")
+
+        # Validações
+        nome_inserido = validar_nome()
+        pin_inserido = validar_pin()
+        dados_reais = contas[id_conta]
+
+        # Verificação final contra os dados guardados
+        if dados_reais['nome'] == nome_inserido and dados_reais['pin'] == pin_inserido:
+            print(f"Sucesso! Bem-vindo {nome_inserido}!")
+            return id_conta
+        else:
+            tentativas -= 1
+            print("Nome ou PIN não coincidem com os registos!")
+
+    print("\nConta bloqueada temporariamente por excesso de erros!")
+    return None
 
 
 
