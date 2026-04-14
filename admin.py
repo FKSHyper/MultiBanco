@@ -99,3 +99,32 @@ def pesquisar_historico(contas):
 
         for m in historico:
             print(f"{m['data']:<20} | {m['tipo']:<12} | {m['valor']:>8.2f}€ | {m['destino']}")
+
+# Menu ADMIN
+def menu_admin(contas):
+    while True:
+        print("\n--- MENU ADMIN ---")
+        print("1. Criar Cliente")
+        print("2. Listar Cliente")
+        print("3. Listar/Pesquisar movimentos")
+        print("4. Delete Cliente")
+        print("5. Estatísticas")
+        print("6. Sair")
+
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            criar_cliente(contas)
+        elif opcao == "2":
+            listar_clientes(contas)
+        elif opcao == "3":
+            pesquisar_historico(contas)
+        elif opcao == "4":
+            eliminar_cliente(contas)
+        elif opcao == "5":
+            mostrar_estat(contas)
+        elif opcao == "6":
+            print("A sair do modo administrativo...")
+            break
+        else:
+            print("Opção inválida!")

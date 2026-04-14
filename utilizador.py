@@ -107,3 +107,28 @@ def consultar_movimentos(id_conta, contas):
     else:
         for m in movimentos:
             print(f"{m['data']} | {m['tipo']:<15} | {m['valor']:>8.2f}€")
+
+# Menu Principal
+def menu_principal(id_conta, contas):
+    while True:
+        print("\n" + "=" * 30)
+        print(f"--- MENU CLIENTE ({contas[id_conta]['nome']}) ---")
+        print("=" * 30)
+        print(
+            "1. Consultar Saldo\n2. Realizar Levantamento\n3. Realizar Depósito\n4. Realizar Transferência\n5. Consultar Movimentos\n6. Sair")
+
+        opcao = input("Escolha uma opção: ")
+
+        if opcao == "1":
+            consultar_saldo(id_conta, contas)
+        elif opcao == "2":
+            levantamento(id_conta, contas)
+        elif opcao == "3":
+            realizar_deposito(id_conta, contas)
+        elif opcao == "4":
+            realizar_transferencia(id_conta, contas)
+        elif opcao == "5":
+            consultar_movimentos(id_conta, contas)
+        elif opcao == "6":
+            print("A sair... Volte sempre!")
+            break
