@@ -79,7 +79,7 @@ def mostrar_estat(contas):
     print(f"Saldo Total no Banco:       {total_banco:>.2f} €")
     print(f"Número de Cientes:          {total_clientes}")
     print(f"Total de Operações:         {total_movimentos}")
-    print(f"Média por Cliente: {(total_movimentos / total_clientes):>.2f} €")
+    print(f"Média por Cliente:          {(total_banco / total_clientes):>.2f} €")
     print("=" * 30)
 
 # Função que permite o ADMIN pesquisar todos os movimentos de uma conta em específico
