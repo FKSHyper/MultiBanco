@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="Login e Segurança">
+    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utilizador.py" beforeDir="false" afterPath="$PROJECT_DIR$/utilizador.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +58,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "Joao",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/hyper/Downloads/ATM Python 1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776115088828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Organizaçao de ficheiros">
+      <option name="closed" value="true" />
+      <created>1776170191415</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776170191415</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +128,7 @@
     <MESSAGE value="Estrutura de Dados &#10;Implementar a Persistência" />
     <MESSAGE value="Desenvolver Menu ADMIN (Funções)" />
     <MESSAGE value="Login e Segurança" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login e Segurança" />
+    <MESSAGE value="Organizaçao de ficheiros" />
+    <option name="LAST_COMMIT_MESSAGE" value="Organizaçao de ficheiros" />
   </component>
 </project>

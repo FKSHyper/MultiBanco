@@ -10,7 +10,7 @@ def criar_cliente(contas):
     nome_validado = validar_nome()
     pin_validado = validar_pin()
 
-    #Criar estrutura
+    # Criar estrutura
     contas[num_conta] = {
         "nome": nome_validado,
         "pin": pin_validado,
@@ -33,7 +33,7 @@ def listar_clientes(contas):
         print("Não existemcontas registadas")
         return
 
-    #Ciclo para listar as informações de todas as contas
+    # Ciclo para listar as informações de todas as contas
     for num, info in contas.items():
         print(f"ID: {num} | Titular: {info['nome']} | Saldo: {info['saldo']}€")
 
