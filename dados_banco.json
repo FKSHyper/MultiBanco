@@ -1,0 +1,46 @@
+{
+    "0000": {
+        "nome": "Admin",
+        "pin": "0000",
+        "tipo": "admin",
+        "saldo": 300.0,
+        "movimentos": []
+    },
+    "1001": {
+        "nome": "João Silva",
+        "pin": "1234",
+        "saldo": 1000.0,
+        "movimentos": [
+            {
+                "data": "2023-10-27 10:30",
+                "tipo": "Abertura",
+                "valor": 1000.0,
+                "destino": "-"
+            },
+            {
+                "data": "14/04/2026 14:26",
+                "tipo": "Depósito",
+                "valor": 500.0,
+                "destino": "-"
+            },
+            {
+                "data": "14/04/2026 14:26",
+                "tipo": "Transferência (Saída)",
+                "valor": 300.0,
+                "destino": "0000"
+            },
+            {
+                "data": "14/04/2026 14:26",
+                "tipo": "Levantamento",
+                "valor": 200.0,
+                "destino": "-"
+            }
+        ]
+    },
+    "1002": {
+        "nome": "Maria Santos",
+        "pin": "4321",
+        "saldo": 1000.0,
+        "movimentos": []
+    }
+}

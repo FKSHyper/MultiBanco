@@ -73,7 +73,7 @@ def mostrar_estat(contas):
     # Ciclo para sumar o total de saldo e movimentos
     for id_conta, info in contas.items():
         total_banco += info['saldo']
-        total_movimentos += info['movimentos']
+        total_movimentos += len(info['movimentos']) # Soma o número de itens
 
     # Relatório Administrativo
     print(f"Saldo Total no Banco:       {total_banco:>.2f} €")

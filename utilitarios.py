@@ -24,8 +24,13 @@ def validar_id_conta(contas, novo = True):
     while True:
         id_conta = input("ID do Conta: ").strip() # Remove espaços no ínicio e fim
 
+        # Verificar se está vazio
+        if not id_conta:
+            print("ERRO: O ID não pode estar vazio!")
+            continue
+
         # Verificação se o ID da conta tem letras
-        if id_conta.isdigit():
+        if not id_conta.isdigit():
             print("ERRO: O ID da conta deve conter apenas números!")
             continue
 
