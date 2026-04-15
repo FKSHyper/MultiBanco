@@ -79,5 +79,5 @@ def realizar_login(contas):
             tentativas -= 1
             print("Nome ou PIN não coincidem com os registos!")
 
-    print("\nConta bloqueada temporariamente por excesso de erros!")
+    print("\nProcesso cancelado por excesso de erros!")
     return None
