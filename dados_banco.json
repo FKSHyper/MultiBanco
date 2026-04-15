@@ -40,7 +40,38 @@
     "1002": {
         "nome": "Maria Santos",
         "pin": "4321",
-        "saldo": 1000.0,
+        "saldo": 1020.0,
         "movimentos": []
+    },
+    "1003": {
+        "nome": "Nair Pereira",
+        "pin": "6789",
+        "saldo": 1280.0,
+        "movimentos": [
+            {
+                "data": "15/04/2026 02:20",
+                "tipo": "Abertura",
+                "valor": 1000.0,
+                "destino": "-"
+            },
+            {
+                "data": "15/04/2026 02:26",
+                "tipo": "Levantamento",
+                "valor": 50.0,
+                "destino": "-"
+            },
+            {
+                "data": "15/04/2026 02:26",
+                "tipo": "Depósito",
+                "valor": 350.0,
+                "destino": "-"
+            },
+            {
+                "data": "15/04/2026 02:27",
+                "tipo": "Transferência (Saída)",
+                "valor": 20.0,
+                "destino": "1002"
+            }
+        ]
     }
 }

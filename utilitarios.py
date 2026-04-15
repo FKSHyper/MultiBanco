@@ -22,7 +22,7 @@ def validar_pin():
 # Função para validar o ID da Conta
 def validar_id_conta(contas, novo = True):
     while True:
-        id_conta = input("ID do Conta: ").strip() # Remove espaços no ínicio e fim
+        id_conta = input("ID da Conta: ").strip() # Remove espaços no ínicio e fim
 
         # Verificar se está vazio
         if not id_conta:
