@@ -1,0 +1,85 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import dados\nimport admin\nimport utilizador\nfrom utilitarios import realizar_login\n\n# Estrutura Principal\n\n# !!Estrutura de Dados!!#\nbanco_dados = {\n    \"1001\": {\n        \"nome\": \"João Silva\",\n        \"pin\": \"1234\",\n        \"saldo\": 1000.0,\n        \"movimentos\": [\n            {\"data\": \"2023-10-27 10:30\", \"tipo\": \"Abertura\", \"valor\": 1000.0, \"destino\": \"-\"}\n        ]\n    },\n    \"1002\": {\n        \"nome\": \"Maria Santos\",\n        \"pin\": \"4321\",\n        \"saldo\": 1000.0,\n        \"movimentos\": []\n    }\n}\n\n# MAIN\ndef main():\n    contas = dados.carregar_dados()\n\n    # Garantia de admin inicial\n    if not contas:\n        contas = {\"0000\": {\"nome\": \"Admin\", \"pin\": \"0000\", \"tipo\": \"admin\", \"saldo\": 0.0, \"movimentos\": []}}\n\n    id_logado = realizar_login(contas)\n\n    if id_logado:\n        if id_logado == \"Admin\" or contas[id_logado].get('tipo') == 'admin':\n            admin.menu_admin(contas)  # Chama o menu que está no admin.py\n        else:\n            utilizador.menu_principal(id_logado, contas)  # Chama o menu no utilizador.py\n\n    dados.guardar_dados(contas)\n\n\nif __name__ == \"__main__\":\n    main()
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision 781ff5493bcbfa83729e3e4b6e8b979515191139)
++++ b/main.py	(date 1776215295220)
+@@ -3,26 +3,6 @@
+ import utilizador
+ from utilitarios import realizar_login
+ 
+-# Estrutura Principal
+-
+-# !!Estrutura de Dados!!#
+-banco_dados = {
+-    "1001": {
+-        "nome": "João Silva",
+-        "pin": "1234",
+-        "saldo": 1000.0,
+-        "movimentos": [
+-            {"data": "2023-10-27 10:30", "tipo": "Abertura", "valor": 1000.0, "destino": "-"}
+-        ]
+-    },
+-    "1002": {
+-        "nome": "Maria Santos",
+-        "pin": "4321",
+-        "saldo": 1000.0,
+-        "movimentos": []
+-    }
+-}
+-
+ # MAIN
+ def main():
+     contas = dados.carregar_dados()
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"ALL\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"934071e7-ae77-4de1-bf49-483952175f41\" name=\"Changes\" comment=\"FEITO\">\n      <change beforePath=\"$PROJECT_DIR$/admin.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin.py\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;FKSHyper&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/FKSHyper/MultiBanco.git&quot;,\n    &quot;accountId&quot;: &quot;04f60221-3326-408b-9e75-b2750838ac6f&quot;\n  }\n}</component>\n  <component name=\"McpProjectServerCommands\">\n    <commands />\n    <urls />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 2,\n  &quot;fromUser&quot;: false\n}</component>\n  <component name=\"ProjectId\" id=\"3C5p4W4sLu48eu2DX2azfstbEbt\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"Python.main.executor\": \"Run\",\n    \"Python.utilitarios.executor\": \"Run\",\n    \"RunOnceActivity.MCP Project settings loaded\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\n    \"com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1\": \"true\",\n    \"git-widget-placeholder\": \"Joao\",\n    \"junie.onboarding.icon.badge.shown\": \"true\",\n    \"last_opened_file_path\": \"/home/hyper/Downloads/ATM Python 1\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\n    \"to.speed.mode.migration.done\": \"true\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"934071e7-ae77-4de1-bf49-483952175f41\" name=\"Changes\" comment=\"\" />\n      <created>1775685094022</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1775685094022</updated>\n      <workItem from=\"1775685095065\" duration=\"2000\" />\n      <workItem from=\"1776104996189\" duration=\"9821000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Estrutura de Dados &#10;Implementar a Persistência\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1776107863367</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1776107863367</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Desenvolver Menu ADMIN (Funções)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1776113665531</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1776113665531</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Login e Segurança\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1776115088828</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1776115088828</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Organizaçao de ficheiros\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1776170191415</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1776170191415</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Ficheiro Utilizador (Codigo do Xavier)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1776171695712</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1776171695712</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"Menus (Codigo do Xavier)\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1776172080653</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1776172080653</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"FEITO\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1776173394340</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1776173394340</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"8\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Estrutura de Dados &#10;Implementar a Persistência\" />\n    <MESSAGE value=\"Desenvolver Menu ADMIN (Funções)\" />\n    <MESSAGE value=\"Login e Segurança\" />\n    <MESSAGE value=\"Organizaçao de ficheiros\" />\n    <MESSAGE value=\"Ficheiro Utilizador (Codigo do Xavier)\" />\n    <MESSAGE value=\"Menus (Codigo do Xavier)\" />\n    <MESSAGE value=\"FEITO\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"FEITO\" />\n  </component>\n  <component name=\"com.intellij.coverage.CoverageDataManagerImpl\">\n    <SUITE FILE_PATH=\"coverage/MultiBanco$utilitarios.coverage\" NAME=\"utilitarios Coverage Results\" MODIFIED=\"1776172635523\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n    <SUITE FILE_PATH=\"coverage/MultiBanco$main.coverage\" NAME=\"main Coverage Results\" MODIFIED=\"1776173260715\" SOURCE_PROVIDER=\"com.intellij.coverage.DefaultCoverageFileProvider\" RUNNER=\"coverage.py\" COVERAGE_BY_TEST_ENABLED=\"false\" COVERAGE_TRACING_ENABLED=\"false\" WORKING_DIRECTORY=\"$PROJECT_DIR$\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 781ff5493bcbfa83729e3e4b6e8b979515191139)
++++ b/.idea/workspace.xml	(date 1776173581878)
+@@ -4,9 +4,7 @@
+     <option name="autoReloadType" value="ALL" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="FEITO">
+-      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
+-    </list>
++    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="Atualizado (ERRO na Media por CLiente)" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -142,7 +140,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1776173394340</updated>
+     </task>
+-    <option name="localTasksCounter" value="8" />
++    <task id="LOCAL-00008" summary="Atualizado (ERRO na Media por CLiente)">
++      <option name="closed" value="true" />
++      <created>1776173487657</created>
++      <option name="number" value="00008" />
++      <option name="presentableId" value="LOCAL-00008" />
++      <option name="project" value="LOCAL" />
++      <updated>1776173487657</updated>
++    </task>
++    <option name="localTasksCounter" value="9" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -156,7 +162,8 @@
+     <MESSAGE value="Ficheiro Utilizador (Codigo do Xavier)" />
+     <MESSAGE value="Menus (Codigo do Xavier)" />
+     <MESSAGE value="FEITO" />
+-    <option name="LAST_COMMIT_MESSAGE" value="FEITO" />
++    <MESSAGE value="Atualizado (ERRO na Media por CLiente)" />
++    <option name="LAST_COMMIT_MESSAGE" value="Atualizado (ERRO na Media por CLiente)" />
+   </component>
+   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+     <SUITE FILE_PATH="coverage/MultiBanco$utilitarios.coverage" NAME="utilitarios Coverage Results" MODIFIED="1776172635523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
