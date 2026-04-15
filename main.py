@@ -1,0 +1,46 @@
+import dados
+import admin
+import utilizador
+from utilitarios import realizar_login
+
+# Estrutura Principal
+
+# !!Estrutura de Dados!!#
+banco_dados = {
+    "1001": {
+        "nome": "João Silva",
+        "pin": "1234",
+        "saldo": 1000.0,
+        "movimentos": [
+            {"data": "2023-10-27 10:30", "tipo": "Abertura", "valor": 1000.0, "destino": "-"}
+        ]
+    },
+    "1002": {
+        "nome": "Maria Santos",
+        "pin": "4321",
+        "saldo": 1000.0,
+        "movimentos": []
+    }
+}
+
+# MAIN
+def main():
+    contas = dados.carregar_dados()
+
+    # Garantia de admin inicial
+    if not contas:
+        contas = {"0000": {"nome": "Admin", "pin": "0000", "tipo": "admin", "saldo": 0.0, "movimentos": []}}
+
+    id_logado = realizar_login(contas)
+
+    if id_logado:
+        if id_logado == "Admin" or contas[id_logado].get('tipo') == 'admin':
+            admin.menu_admin(contas)  # Chama o menu que está no admin.py
+        else:
+            utilizador.menu_principal(id_logado, contas)  # Chama o menu no utilizador.py
+
+    dados.guardar_dados(contas)
+
+
+if __name__ == "__main__":
+    main()

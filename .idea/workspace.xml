@@ -1,23 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="" />
+    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="FEITO">
+      <change beforePath="$PROJECT_DIR$/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/admin.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FKSHyper&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/FKSHyper/MultiBanco.git&quot;,
+    &quot;accountId&quot;: &quot;04f60221-3326-408b-9e75-b2750838ac6f&quot;
+  }
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3C5p4W4sLu48eu2DX2azfstbEbt" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,14 +48,23 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "Python.utilitarios.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Joao",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/hyper/Downloads/ATM Python 1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
@@ -41,7 +72,6 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-PY-261.22158.340" />
         <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
       </set>
     </attachedChunks>
@@ -54,7 +84,82 @@
       <option name="presentableId" value="Default" />
       <updated>1775685094022</updated>
       <workItem from="1775685095065" duration="2000" />
+      <workItem from="1776104996189" duration="9821000" />
     </task>
+    <task id="LOCAL-00001" summary="Estrutura de Dados &#10;Implementar a Persistência">
+      <option name="closed" value="true" />
+      <created>1776107863367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776107863367</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Desenvolver Menu ADMIN (Funções)">
+      <option name="closed" value="true" />
+      <created>1776113665531</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1776113665531</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Login e Segurança">
+      <option name="closed" value="true" />
+      <created>1776115088828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776115088828</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Organizaçao de ficheiros">
+      <option name="closed" value="true" />
+      <created>1776170191415</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1776170191415</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ficheiro Utilizador (Codigo do Xavier)">
+      <option name="closed" value="true" />
+      <created>1776171695712</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776171695712</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Menus (Codigo do Xavier)">
+      <option name="closed" value="true" />
+      <created>1776172080653</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1776172080653</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FEITO">
+      <option name="closed" value="true" />
+      <created>1776173394340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1776173394340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Estrutura de Dados &#10;Implementar a Persistência" />
+    <MESSAGE value="Desenvolver Menu ADMIN (Funções)" />
+    <MESSAGE value="Login e Segurança" />
+    <MESSAGE value="Organizaçao de ficheiros" />
+    <MESSAGE value="Ficheiro Utilizador (Codigo do Xavier)" />
+    <MESSAGE value="Menus (Codigo do Xavier)" />
+    <MESSAGE value="FEITO" />
+    <option name="LAST_COMMIT_MESSAGE" value="FEITO" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/MultiBanco$utilitarios.coverage" NAME="utilitarios Coverage Results" MODIFIED="1776172635523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MultiBanco$main.coverage" NAME="main Coverage Results" MODIFIED="1776173260715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,0 +1,117 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"934071e7-ae77-4de1-bf49-483952175f41\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"McpProjectServerCommands\">\n    <commands />\n    <urls />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 2,\n  \"fromUser\": false\n}]]></component>\n  <component name=\"ProjectId\" id=\"3C5p4W4sLu48eu2DX2azfstbEbt\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"RunOnceActivity.MCP Project settings loaded\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\n    \"codeWithMe.voiceChat.enabledByDefault\": \"false\",\n    \"com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1\": \"true\",\n    \"git-widget-placeholder\": \"master\",\n    \"junie.onboarding.icon.badge.shown\": \"true\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"to.speed.mode.migration.done\": \"true\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-PY-261.22158.340\" />\n        <option value=\"bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"934071e7-ae77-4de1-bf49-483952175f41\" name=\"Changes\" comment=\"\" />\n      <created>1775685094022</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1775685094022</updated>\n      <workItem from=\"1775685095065\" duration=\"2000\" />\n    </task>\n    <servers />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 79e0da2e99c4e459e18a8b7e275605d74a01dcfd)
++++ b/.idea/workspace.xml	(date 1776169142116)
+@@ -1,23 +1,45 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="ALL" />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="" />
++    <list default="true" id="934071e7-ae77-4de1-bf49-483952175f41" name="Changes" comment="First Commit">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
++  <component name="GitHubPullRequestSearchHistory">{
++  &quot;lastFilter&quot;: {
++    &quot;state&quot;: &quot;OPEN&quot;,
++    &quot;assignee&quot;: &quot;FKSHyper&quot;
++  }
++}</component>
++  <component name="GithubPullRequestsUISettings">{
++  &quot;selectedUrlAndAccountId&quot;: {
++    &quot;url&quot;: &quot;https://github.com/FKSHyper/MultiBanco.git&quot;,
++    &quot;accountId&quot;: &quot;353b0040-b609-47e7-a890-47817f7c17a4&quot;
++  }
++}</component>
+   <component name="McpProjectServerCommands">
+     <commands />
+     <urls />
+   </component>
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 2,
+-  "fromUser": false
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 2,
++  &quot;fromUser&quot;: false
++}</component>
+   <component name="ProjectId" id="3C5p4W4sLu48eu2DX2azfstbEbt" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+@@ -28,12 +50,18 @@
+     "ModuleVcsDetector.initialDetectionPerformed": "true",
+     "RunOnceActivity.MCP Project settings loaded": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.git.unshallow": "true",
+     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+     "codeWithMe.voiceChat.enabledByDefault": "false",
+     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+-    "git-widget-placeholder": "master",
++    "git-widget-placeholder": "Joao",
+     "junie.onboarding.icon.badge.shown": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
++    "settings.editor.selected.configurable": "preferences.pluginManager",
+     "to.speed.mode.migration.done": "true",
+     "vue.rearranger.settings.migration": "true"
+   }
+@@ -53,8 +81,33 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1775685094022</updated>
+-      <workItem from="1775685095065" duration="2000" />
++      <workItem from="1775685095065" duration="738000" />
++      <workItem from="1776169075523" duration="68000" />
++    </task>
++    <task id="LOCAL-00001" summary="First Commit">
++      <option name="closed" value="true" />
++      <created>1775685201318</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1775685201318</updated>
++    </task>
++    <task id="LOCAL-00002" summary="First Commit">
++      <option name="closed" value="true" />
++      <created>1775685351815</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1775685351815</updated>
+     </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="First Commit" />
++    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
++  </component>
+ </project>
+\ No newline at end of file
